@@ -25,6 +25,7 @@ def retrieveOrCreateNewTitle(request, format=None):
 	cursor = db.cursor()
 	#data = cursor.fetchone()
 	#print("Database version : %s " % data)
+	print("hello world")
 	
 	if request.method == 'GET':
 		cursor.execute("SELECT * FROM CallOfDuty;")
