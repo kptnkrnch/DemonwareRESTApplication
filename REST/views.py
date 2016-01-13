@@ -42,6 +42,7 @@ def retrieveOrCreateNewGames(request, format=None):
 		print(querystring)
 	
 	db.close()
+	
 	return Response("HELLO WORLD")
 	
 @api_view(['GET', 'PUT', 'DELETE'])
