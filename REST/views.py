@@ -12,7 +12,7 @@ def EstablishConnection():
 
 # Create your views here.
 @api_view(['GET', 'POST'])
-def retrieveOrCreate(request, format=None):
+def retrieveOrCreateNewGames(request, format=None):
 	"""
 	Lists (GET) or creates (POST)
 	"""
