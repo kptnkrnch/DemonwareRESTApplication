@@ -12,7 +12,7 @@ def EstablishConnection():
 
 # Create your views here.
 @api_view(['GET', 'POST'])
-def retrieveOrCreate(request, format=None):
+def retrieveOrCreateNewTitle(request, format=None):
 	"""
 	Lists (GET) or creates (POST)
 	"""
@@ -42,6 +42,7 @@ def retrieveOrCreate(request, format=None):
 		print(querystring)
 	
 	db.close()
+	
 	return Response("HELLO WORLD")
 	
 @api_view(['GET', 'PUT', 'DELETE'])
