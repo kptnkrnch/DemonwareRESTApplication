@@ -14,7 +14,8 @@ def EstablishConnection():
 @api_view(['GET', 'POST'])
 def retrieveOrCreateNewTitle(request, format=None):
 	"""
-	Lists (GET) or creates (POST)
+	Lists (GET) or creates (POST).
+	Handles Call of Duty Games.
 	"""
 	cursor = None
 	db = None
