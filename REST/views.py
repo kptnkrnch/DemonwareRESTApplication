@@ -57,6 +57,7 @@ def retrieveUpdateOrDelete(request, pk, format=None):
 		db = EstablishConnection()
 	
 	cursor = db.cursor()
+	print("goodbye world")
 	
 	if request.method == 'GET':
 		cursor.execute("SELECT * FROM CallOfDuty WHERE id=%s;" % pk)
